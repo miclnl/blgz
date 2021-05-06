@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="71.097mm" height="19.783mm" version="1.1" viewBox="0 0 71.097 19.783" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<metadata>
+<rdf:RDF>
+<cc:Work rdf:about="">
+<dc:format>image/svg+xml</dc:format>
+<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+<dc:title/>
+</cc:Work>
+</rdf:RDF>
+</metadata>
+<g transform="translate(-22.988 -46.165)">
+<text fill="#000000" font-family="sans-serif" font-size="10.583px" style="line-height:0;shape-inside:url(#rect12);white-space:pre" xml:space="preserve"><tspan x="22.677734" y="54.257028"><tspan letter-spacing=".26458px" word-spacing="0px">Zelfstandig</tspan><tspan dx="0.26458073" font-family="Tahoma" style="line-height:1.25">
+</tspan></tspan></text>
+<path d="m46.567 61.449a0.47956 0.7276 0 0 1-0.47956 0.7276 0.47956 0.7276 0 0 1-0.47956-0.7276 0.47956 0.7276 0 0 1 0.47956-0.7276 0.47956 0.7276 0 0 1 0.47956 0.7276zm-2.9729-5.502v1.9994s-4.5089-0.30855-4.5331 1.6283l0.03307 1.372v0.30386h14v-1.6759c0-1.864-4.5-1.6278-4.5-1.6278v-1.9999zm0.49971 0.49971h4.0003v1.5002h-4.0003zm-4.9997 5.085v2.4154c0.01618 1.8869 4.6247 1.9999 6.9996 1.9999 2.3749 0 7.0001-0.21514 7.0001-1.9999v-2.4154z" fill="#a00" stroke-width=".26458"/>
+</g>
+<g transform="translate(-22.988 -46.165)">
+<g transform="translate(-19.711 -1.0583)">
+<text x="73.70536" y="66.145836" fill="#000000" font-family="sans-serif" font-size="10.583px" stroke-width=".26458" style="line-height:1.25" xml:space="preserve"><tspan x="73.70536" y="66.145836" letter-spacing=".26458px" stroke-width=".26458">Gezond</tspan></text>
+<g transform="matrix(3.1513 0 0 2.9341 -166.19 -145.32)">
+<g transform="translate(-.35967 -.52917)">
+<ellipse cx="77.755" cy="71.432" rx=".43045" ry=".43604" fill="#b3b3b3" stroke-width=".2205"/>
+<ellipse cx="77.755" cy="71.426" rx=".38014" ry=".38014" fill="#666" stroke-width=".19347"/>
+</g>
+</g>
+</g>
+</g>
+</svg>
