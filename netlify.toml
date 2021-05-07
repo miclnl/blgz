@@ -7,3 +7,25 @@
 
 [context.production]
     command = "hugo --gc --minify -b ${URL}"
+	
+[[plugins]]
+	package = "netlify-plugin-hugo-cache-resources"
+
+[plugins.inputs]
+	# If it should show more verbose logs (optional, default = true)
+	debug = true
+	# Relative path to source directory in case you use Hugo's "--s" option
+	srcdir = "/"
+
+
+
+[[plugins]]
+package = "netlify-plugin-hashfiles"
+
+[plugins.inputs]
+# An array of glob patterns for pages on your site. Recursive traversal will start from these
+  entryPoints = [
+    "*.html"
+  ]
+  # Directory where content-addressable files are moved and immutable cache-headers are set
+  staticDir = "/static/"
