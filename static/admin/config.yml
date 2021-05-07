@@ -24,38 +24,38 @@ slug:
 
 
 collections:
-  - name: 'about'
-    label: 'About'
-    folder: 'content/about'
-    delete: false
-    create: false
-    path: 'index'
-    fields:
-      - { label: 'Titel', name: 'title', widget: 'string' }
-      - { label: 'Auteur', name: 'author', widget: 'string' }
-      - { label: 'Omschrijving', name: 'description', widget: 'string' }
-      - { label: 'Publicatie datum', name: 'date', widget: 'datetime' }
-      - { name: 'layout', widget: 'hidden', default: 'about' }
-      - { label: 'Inhoud', name: 'body', widget: 'markdown' }
-  - name: 'contact'
-    label: 'Contact'
-    folder: 'content/contact'
-    delete: false
-    create: false
-    path: 'index'
-    fields:
-      - { label: 'Titel', name: 'title', widget: 'string', default: 'Contact' }
-      - { label: 'Hoeveel uur tot antwoord', name: 'contactanswertime', widget: 'string' }
-      - { name: 'layout', widget: 'hidden', default: 'about' }
-      - { name: 'netlify', widget: 'hidden', default: 'true' }
-  - name: 'blog'
-    label: 'Blog'
-    folder: 'content/blog'
-    create: true
-    path: '{{slug}}/index'
-    media_folder: 'static/img/{{year}}/{{month}}'
-    public_folder: ''
-    fields:
+    - name: 'about'
+      label: 'About'
+      folder: 'content/about'
+      delete: false
+      create: false
+      path: 'index'
+      fields:
+        - { label: 'Titel', name: 'title', widget: 'string' }
+        - { label: 'Auteur', name: 'author', widget: 'string' }
+        - { label: 'Omschrijving', name: 'description', widget: 'string' }
+        - { label: 'Publicatie datum', name: 'date', widget: 'datetime' }
+        - { name: 'layout', widget: 'hidden', default: 'about' }
+        - { label: 'Inhoud', name: 'body', widget: 'markdown' }
+    - name: 'contact'
+      label: 'Contact'
+      folder: 'content/contact'
+      delete: false
+      create: false
+      path: 'index'
+      fields:
+        - { label: 'Titel', name: 'title', widget: 'string', default: 'Contact' }
+        - { label: 'Hoeveel uur tot antwoord', name: 'contactanswertime', widget: 'string' }
+        - { name: 'layout', widget: 'hidden', default: 'about' }
+        - { name: 'netlify', widget: 'hidden', default: true }
+    - name: 'blog'
+      label: 'Blog'
+      folder: 'content/blog'
+      create: true
+      delete: true
+      path: '{{slug}}'
+      media_folder: 'static/img/{{year}}/{{month}}'
+      fields:
         - { label: 'Status', name: 'status', widget: 'select', options: ['Published', 'Featured', 'Draft'], default: 'Published' }
         - { label: 'Verborgen', name: 'hidden', widget: 'boolean', required: false }
         - { label: 'Titel', name: 'title', widget: 'string' }
@@ -66,8 +66,8 @@ collections:
         - { label: 'Laatst aangepast', name 'lastmod', widget: 'datetime' }
         - { label: 'Auteur', name: 'author', widget: 'string' }
         - { label: 'Tags', name: 'tags', widget: 'list' }
-        - { label: 'Image'  , name: 'images', widget: image, required: false }
-         - label: 'Categoriën'
+        - { label: 'Image'  , name: 'images', widget: 'image', required: false }
+        - label: 'Categoriën'
           name: 'categories'
           widget: 'list'
           required: false
@@ -83,4 +83,4 @@ collections:
           name: 'options'
           widget: 'object'
           fields:
-          - { label: 'Commentaar', name: 'comments', widget: 'boolean', default: true }
+            - { label: 'Commentaar', name: 'comments', widget: 'boolean', default: true }
