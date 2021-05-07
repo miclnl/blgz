@@ -9,7 +9,7 @@ description: Wat is bevlogenheid en hoe zorg ik voor balans.
 date: 2021-05-07T12:46:03.938Z
 lastmod: 2021-05-07T12:46:03.968Z
 images:
-  - stretch: horizontal
+  - stretch: cover
     src: /img/2021/05/pexels-julia-larson-6456206.jpg
     alt: Bokser van Julia Larson
 comments: true

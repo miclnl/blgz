@@ -81,8 +81,8 @@ collections:
             - label: 'Uitrekken'
               name: 'stretch'
               widget: 'select'
-              options: ['horizontal', 'vertical']
-              default: 'horizontal'
+              options: ['cover','horizontal', 'vertical']
+              default: 'cover'
         - label: 'Categoriën'
           name: 'categories'
           widget: 'list'
