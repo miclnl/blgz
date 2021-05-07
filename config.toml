@@ -85,7 +85,7 @@ disableLanguages        = ["en"]
     gitProvider         = "github"
     username            = "miclnl"
     repo                = "blgz"
-    branch              = "main"
+    branch              = "master"
 
     [params.staticman.recaptcha]
       siteKey           = ""
