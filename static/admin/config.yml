@@ -79,8 +79,4 @@ collections:
               searchFields: ['title']
               valueField: 'title'
         - { label: 'Inhoud', name: 'body', widget: 'markdown' }
-        - label: 'Opties'
-          name: 'options'
-          widget: 'object'
-          fields:
-            - { label: 'Commentaar', name: 'comments', widget: 'boolean', default: true }
+        - { label: 'Commentaar', name: 'comments', widget: 'boolean', default: true }
