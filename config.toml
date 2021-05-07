@@ -29,6 +29,7 @@ disableLanguages        = ["en"]
   removeBlur            = false
   socialShare           = ["twitter", "facebook", "reddit", "linkedin", "pinterest", "email"]
   hideEmptyStats        = false
+  robots				= false
 
   [params.meta]
     description         = "Gezond aan het werk!"
