@@ -25,10 +25,10 @@ disableLanguages        = ["en"]
   highlightjsLang       = []
   viewMorePostsLink     = "blog"
   readingTime           = true
-  imageStretch          = ""
+  imageStretch          = "cover"
   removeBlur            = false
   socialShare           = ["twitter", "facebook", "reddit", "linkedin", "pinterest", "email"]
-  hideEmptyStats        = false
+  hideEmptyStats        = true
   robots				= false
 
   [params.meta]
