@@ -1,10 +1,10 @@
-+++
-title = "Over Zelfstandig Gezond"
-description = "Waar staan wij voor"
-author = "Hugo Authors"
-date = "2021-04-03"
-layout = "about"
-+++
+---
+title: Over Zelfstandig Gezond
+author: Zelfstandig Gezond
+description: Waar staan wij voor
+date: 2021-05-07T10:20:47.105Z
+layout: about
+---
 Je wilt wat in het leven. Je hebt je zaakjes goed op orde. Toch?
 
 Succesvol ondernemen vraagt om een lange adem en gezond verstand. Het vraagt om een **gezonde, zelfstandige ondernemer**. Wij kunnen je daar bij helpen.
