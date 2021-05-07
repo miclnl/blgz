@@ -3,6 +3,7 @@
   branch: main
 
 media_folder: "static/img" # Folder where user uploaded files should go
+public_folder: "img"
 publish_mode: editorial_workflow
 
 slug:
@@ -66,6 +67,7 @@ collections:
           name: 'images'
           widget: 'list'
           required: false
+          summary: '{{fields.alt}}'
           fields:
             - label: 'Image'
               name: 'src'
