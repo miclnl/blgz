@@ -11,6 +11,10 @@ images:
   stretch: horizontal
   src: /static/img/2021/05/pexels-julia-larson-6456206.jpg
   alt: Bokser door Julia Peterson
+images:
+  stretch: horizontal
+  src: /static/img/2021/05/pexels-julia-larson-6456206.jpg
+  alt: Bokser door Julia Peterson
 comments: true
 ---
 **Bevlogenheid**, wat is dat nou eigenlijk. Wikipedia verwijst door naar [Motivatie](https://nl.wikipedia.org/wiki/Motivatie), maar dat woord doet geen recht aan lading.
