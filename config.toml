@@ -33,7 +33,7 @@ disableLanguages        = ["en"]
   [params.meta]
     description         = "Gezond aan het werk!"
     author              = "Zelfstandig Gezond"
-    favicon             = false
+    favicon             = true
     svg                 = true
     faviconVersion      = "1"
     msColor             = "#ffffff"
@@ -173,20 +173,20 @@ disableLanguages        = ["en"]
 [social]
   # Professional/Business Oriented Communities
   linkedin              = "example"
-  linkedin_company      = "examplebusiness"
+  #linkedin_company      = "examplebusiness"
 
   slideshare            = ""
   # Social Networks
   facebook              = "example"
-  vimeo                 = ""
-  whatsapp              = "" # WhatsApp Number
-  instagram             = "example"
-  tumblr                = ""
+  #vimeo                 = ""
+  #whatsapp              = "" # WhatsApp Number
+ # instagram             = "example"
+  #tumblr                = ""
   twitter               = "example"
-  googlescholar         = ""
-  orcid                 = ""
-  researchgate          = "example"
-  keybase               = "example"
+ # googlescholar         = ""
+  #orcid                 = ""
+  #researchgate          = "example"
+  #keybase               = "example"
   mastodon              = "example.com/@example"
   # Email
-  email                 = "example"
+  #email                 = "example"
