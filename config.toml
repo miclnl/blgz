@@ -81,7 +81,7 @@ disableLanguages        = ["en"]
 
   [params.staticman]
     enabled             = true
-    api                 = "https://blzg-staticman.herokuapp.com/v3/entry"  # No Trailing Slash
+    api                 = "blzg-staticman.herokuapp.com/v3/entry"  # No Trailing Slash
     gitProvider         = "github"
     username            = "miclnl"
     repo                = "blgz"
