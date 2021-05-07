@@ -37,16 +37,6 @@ collections:
         - { name: 'layout', widget: 'hidden', default: 'about' }
         - { name: 'netlify', widget: 'hidden', default: true }
         
-  - name: postCategories
-    label: 'Categoriën'
-    editor:
-      preview: false
-    folder: 'content/categories'
-    slug: '{{slug}}'
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-      - { label: Title, name: title, widget: string }
-
     - name: 'blog'
       label: 'Blog'
       folder: 'content/blog'
@@ -59,7 +49,6 @@ collections:
         - { label: 'Verborgen', name: 'hidden', widget: 'boolean', required: false }
         - { label: 'Titel', name: 'title', widget: 'string' }
         - { label: 'Auteur', name: 'author', widget: 'string', default: 'Zelfstandig Gezond' }
-        - { label: 'Tags', name: 'tags', widget: 'list' }
         - { label: 'Omschrijving', name: 'description', widget: 'string' }
         - { label: 'Publicatie datum', name: 'date', widget: 'datetime' }
         - { label: 'Laatst aangepast', name: 'lastmod', widget: 'datetime' }
@@ -83,16 +72,7 @@ collections:
               widget: 'select'
               options: ['cover','horizontal', 'vertical']
               default: 'cover'
-        - label: 'Categoriën'
-          name: 'categories'
-          widget: 'list'
-          required: false
-          fields:
-            - label: 'Category'
-              name: 'category'
-              widget: 'relation'
-              collection: 'postCategories'
-              searchFields: ['title']
-              valueField: 'title'
         - { label: 'Inhoud', name: 'body', widget: 'markdown' }
+        - { label: 'Categoriën', name: 'categories', widget: 'list' }
+        - { label: 'Tags', name: 'tags', widget: 'list' }
         - { label: 'Commentaar', name: 'comments', widget: 'boolean', default: true }
