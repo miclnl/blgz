@@ -37,7 +37,7 @@ comments:
   moderation: false
 
   # Name of the site. Used in notification emails.
-  name: ""
+  name: "Zelfstandig Gezond"
 
   # (*) REQUIRED
   #
@@ -69,3 +69,7 @@ comments:
     # i.e. https://{your-staticman-api}/v3/encrypt/{your-site-secret}
     # For more information, visit https://staticman.net/docs/encryption
     secret: ""
+akismet:
+    enabled: true
+    author: "{name}"
+    authorEmail: "{email}"

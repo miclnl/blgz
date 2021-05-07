@@ -5,7 +5,7 @@ DefaultContentLanguage  = "nl"
 title                   = "Zelfstandig Gezond"
 theme                   = "hugo-future-imperfect-slim"
 paginate                = 3
-disqusShortname         = ""
+disqusShortname         = "zelfstandig-gezond"
 googleAnalytics         = ""
 pluralizeListTitles     = false
 disableLanguages        = ["en"]
@@ -76,7 +76,7 @@ disableLanguages        = ["en"]
     repo                = ""
     issueTerm           = "pathname"
     issueNumber         = ""
-    label               = "" 
+    label               = "comment" 
     theme               = "github-light"
 
   [params.staticman]
