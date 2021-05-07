@@ -63,10 +63,10 @@ collections:
         - { label: 'Keywords', name: 'keywords', widget: 'list' }
         - { label: 'Omschrijving', name: 'description', widget: 'string' }
         - { label: 'Publicatie datum', name: 'date', widget: 'datetime' }
-        - { label: 'Laatst aangepast', name 'lastmod', widget: 'datetime' }
+        - { label: 'Laatst aangepast', name: 'lastmod', widget: 'datetime' }
         - { label: 'Auteur', name: 'author', widget: 'string' }
         - { label: 'Tags', name: 'tags', widget: 'list' }
-        - { label: 'Image'  , name: 'images', widget: 'image', required: false }
+        - { label: 'Image', name: 'images', widget: 'image', required: false }
         - label: 'Categoriën'
           name: 'categories'
           widget: 'list'
