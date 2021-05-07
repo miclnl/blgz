@@ -88,8 +88,8 @@ disableLanguages        = ["en"]
     branch              = "main"
 
     [params.staticman.recaptcha]
-      siteKey           = ""
-      encryptedKey      = ""
+      siteKey           = "6LcA0soaAAAAAC7Fzskkh-LQQqmLFn8gYBhR2TyO"
+      encryptedKey      = "E/dd4Lte8L4pvzVW3LLkb55h85aTjBRT3yJgGle21Vuox1vYYO/98F1iok8mKbxpAHMS0HhRAOJ2ll/JYgDHOPgHCXSUs3JuQx/2ZV4IP7Rfjng7wp86BotMO4Fm4mLd43Z4uoOZIsac2PwucWOEpACOzk0B58bf0M1PmZ4fv9ashglDk+KWCTGnppgSsq1eBIXrGvqQZtLUh3P7QBb6WEhe10htR472/ZxAc9Brc41gM0JLSitmtHRYjKjjZPPqZjnWu5mN+Uf5Y+/NUQ/Yv6X3m46hUb73JVLF3jgP+NFm2hAPwe5ywIwSnZa+mG49y3SpvYGEmfGU1Qoai9Pf8g=="
 
 [menu]
 
