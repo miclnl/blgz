@@ -17,7 +17,7 @@ disableLanguages        = ["en"]
   home                  = ["html", "json", "rss"]
 
 [params]
-  enableCDN             = false
+  enableCDN             = true
   cssFiles              = ["default"]
   jsFiles               = ["default"]
   highlightjs           = true
@@ -29,7 +29,7 @@ disableLanguages        = ["en"]
   removeBlur            = false
   socialShare           = ["twitter", "facebook", "reddit", "linkedin", "pinterest", "email"]
   hideEmptyStats        = true
-  robots				= false
+  robots                = false
 
   [params.meta]
     description         = "Gezond aan het werk!"
@@ -41,7 +41,7 @@ disableLanguages        = ["en"]
     iOSColor            = "#ffffff"
 
   [params.header]
-    navbarTitle         = "Z G"
+    navbarTitle         = "Z-G"
     dynamicTitles       = true
     searchMenu          = true
     shareMenu           = true
