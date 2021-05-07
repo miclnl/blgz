@@ -11,18 +11,6 @@ slug:
   clean_accents: true
   sanitize_replacement: "_"
 
-# media_library:
-  # name: uploadcare
-  # config:
-    # publicKey: a73a170cb5cdef662983
-    # multiple: false
-    # tabs: 'file camera url facebook gdrive'
-    # effects: 'crop,rotate,enhance,grayscale'
-    # imageShrink: '2000x2000'
-    # previewStep: true
-    # clearable: true
-
-
 collections:
     - name: 'about'
       label: 'About'
@@ -48,13 +36,25 @@ collections:
         - { label: 'Hoeveel uur tot antwoord', name: 'contactanswertime', widget: 'string' }
         - { name: 'layout', widget: 'hidden', default: 'about' }
         - { name: 'netlify', widget: 'hidden', default: true }
+        
+  - name: postCategories
+    label: 'Categoriën'
+    editor:
+      preview: false
+    folder: 'content/categories'
+    slug: '{{slug}}'
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - { label: Title, name: title, widget: string }
+
     - name: 'blog'
       label: 'Blog'
       folder: 'content/blog'
       create: true
       delete: true
-      path: '{{slug}}'
-      media_folder: '/static/img/{{year}}/{{month}}'
+      path: '{{slug}}/index'
+      media_folder: ''
+      public_folder: ''
       fields:
         - { label: 'Verborgen', name: 'hidden', widget: 'boolean', required: false }
         - { label: 'Titel', name: 'title', widget: 'string' }
