@@ -71,5 +71,8 @@ comments:
     secret: ""
 akismet:
     enabled: true
-    author: "{name}"
-    authorEmail: "{email}"
+    author: "name"
+    authorEmail: "email"
+    authorUrl: "url"
+    content: "message"
+    type: "comment"

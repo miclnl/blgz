@@ -88,8 +88,8 @@ disableLanguages        = ["en"]
     branch              = "master"
 
     [params.staticman.recaptcha]
-      siteKey           = ""
-      encryptedKey      = ""
+      siteKey           = "https://www.zelfstandiggezond.nl"
+      encryptedKey      = "1cf2dc515c47"
 
 [menu]
 
