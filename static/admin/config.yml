@@ -1,9 +1,9 @@
 ﻿backend:
   name: git-gateway
   branch: main
+  use_graphql: true
 
 media_folder: "static/img" # Folder where user uploaded files should go
-public_folder: "img"
 publish_mode: editorial_workflow
 
 slug:
@@ -54,19 +54,34 @@ collections:
       create: true
       delete: true
       path: '{{slug}}'
-      media_folder: 'static/img/{{year}}/{{month}}'
+      media_folder: '/static/img/{{year}}/{{month}}'
       fields:
-        - { label: 'Status', name: 'status', widget: 'select', options: ['Published', 'Featured', 'Draft'], default: 'Published' }
         - { label: 'Verborgen', name: 'hidden', widget: 'boolean', required: false }
         - { label: 'Titel', name: 'title', widget: 'string' }
-        - { label: 'Slug', name: 'slug', widget: 'string', default: '{{slug}}' }
-        - { label: 'Keywords', name: 'keywords', widget: 'list' }
+        - { label: 'Auteur', name: 'author', widget: 'string' }
+        - { label: 'Tags', name: 'tags', widget: 'list' }
         - { label: 'Omschrijving', name: 'description', widget: 'string' }
         - { label: 'Publicatie datum', name: 'date', widget: 'datetime' }
         - { label: 'Laatst aangepast', name: 'lastmod', widget: 'datetime' }
-        - { label: 'Auteur', name: 'author', widget: 'string' }
-        - { label: 'Tags', name: 'tags', widget: 'list' }
-        - { label: 'Image', name: 'images', widget: 'image', required: false }
+        - label: 'Image'
+          name: 'images'
+          widget: 'object'
+          required: false
+          fields:
+            - label: 'Image'
+              name: 'src'
+              widget: 'image'
+              required: false
+            - label: 'Alternatieve tekst'
+              name: 'alt'
+              widget: 'string'
+              hint: 'Zet hier de ondertitel/alternatieve tekst'
+              required: false
+            - label: 'Uitrekken'
+              name: 'stretch'
+              widget: 'select'
+              options: ['horizontal', 'vertical']
+              default: 'horizontal'
         - label: 'Categoriën'
           name: 'categories'
           widget: 'list'
