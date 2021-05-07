@@ -1,25 +1,24 @@
 +++
-title = "About"
-description = "Hugo, the world’s fastest framework for building websites"
+title = "Over Zelfstandig Gezond"
+description = "Waar staan wij voor"
 author = "Hugo Authors"
-date = "2019-02-28"
+date = "2021-04-03"
 layout = "about"
 +++
+Je wilt wat in het leven. Je hebt je zaakjes goed op orde. Toch?
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+Succesvol ondernemen vraagt om een lange adem en gezond verstand. Het vraagt om een **gezonde, zelfstandige ondernemer**. Wij kunnen je daar bij helpen.
 
-Hugo makes use of a variety of open source projects including:
+> **Zelfstandig wil namelijk níet zeggen dat je er alleen voor staat**.
 
-* https://github.com/yuin/goldmark
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
+## Verstandig *met een bedrijfsarts*
 
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
+**Zelfstandig Gezond** is de eerste bedrijfsgeneeskundige dienst die zelfstandig ondernemers helpt bij het voorkomen van -en begeleiden bij- ziekte. Met onze kennis over de geneeskunde en arbeid, en jouw ervaring zorgen we er samen voor dat jij gezond blijft. Zo kan jij je aandacht volledig blijven richten op je eigen onderneming.
 
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
+## **Niet verplicht**
 
-Websites built with Hugo are extremelly fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
+Het is (nog) niet verplicht om als zelfstandig ondernemer te beschikken over een bedrijfsarts. **Wel verstandig. Investeer in je bedrijf; investeer in jezelf**. Dit sluit ook aan bij de visie van [Stichting ZZP Nederland ](https://www.zzp-nederland.nl/kennisbank/arbeidsarts-voor-zzpers), Nederlandse Vereniging voor Arbeids- en Bedrijfsgeneeskunde (NVAB) én de [Koninklijke Nederlandsche Maatschappij tot bevordering der Geneeskunst (KNMG).](https://www.knmg.nl/actualiteit-opinie/nieuws/nieuwsbericht/artsen-arbeidsgerichte-medische-zorg-moet-toegankelijk-zijn-voor-iedereen.htm)
 
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+## Wat heb je nodig?
+
+Op dit moment is Zelfstandig Gezond nog zijn visie aan het ontwikkelen. We ‘bestaan’ nog niet. Wel denken wij ook nu graag met jou mee. Vertel ons wat wij voor jouw onderneming kunnen betekenen.

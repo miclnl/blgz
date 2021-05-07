@@ -3,7 +3,7 @@
 
 [build.environment]
     HUGO_VERSION = "0.83.1"
-    HUGO_THEME = "stack"
+    HUGO_THEME = "hugo-future-imperfect-slim"
 
 [context.production]
     command = "hugo --gc --minify -b ${URL}"

@@ -40,7 +40,7 @@ disableLanguages        = ["en"]
     iOSColor            = "#ffffff"
 
   [params.header]
-    navbarTitle         = "Gezond"
+    navbarTitle         = "Z G"
     dynamicTitles       = true
     searchMenu          = true
     shareMenu           = true
@@ -55,10 +55,10 @@ disableLanguages        = ["en"]
     alwaysOnHomepage      = false
 
     [params.intro.pic]
-      src                 = "img/main/logo.jpg"
-      shape               = "circle"
-      width               = ""
-      alt                 = "Hugo Future Imperfect Slim"
+      src                 = "img/main/logo_mini.svg"
+      shape               = "elipse"
+      width               = "200"
+      alt                 = "Zelfstandig Gezond Logo"
 
   [params.sidebar]
     about               = "Hier schrijven we over manieren waarop je gezond aan het werk kan blijven."
