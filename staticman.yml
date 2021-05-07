@@ -38,6 +38,7 @@ comments:
 
   # Name of the site. Used in notification emails.
   name: "Zelfstandig Gezond"
+  allowedOrigins: ["zelfstandiggezond.nl","www.zelfstandiggezond.nl"]
 
   # (*) REQUIRED
   #
@@ -69,7 +70,7 @@ comments:
     # i.e. https://{your-staticman-api}/v3/encrypt/{your-site-secret}
     # For more information, visit https://staticman.net/docs/encryption
     secret: ""
-akismet:
+  akismet:
     enabled: true
     author: "name"
     authorEmail: "email"
