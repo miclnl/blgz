@@ -10,13 +10,12 @@ description: Heel veel mensen denken dat omdat de werkgever de bedrijfsarts
 date: 2021-05-08T18:16:02.496Z
 lastmod: 2021-05-08T18:16:02.523Z
 images:
-  - stretch: vertical
-    alt: Foto door ijeab - www.freepik.com
+  - stretch: cover
+    alt: De dokter geeft een hand aan de patiënt
+    attributed: Foto door ijeab www.freepik.com
     src: doctor-patient.jpg
 comments: true
 ---
-# 
-
 **Heel veel mensen denken dat omdat de werkgever de bedrijfsarts betaalt, deze ook bepaald wat er gebeurd bij ziekte. Dat is niet zo! Voor de werkgever en werknemer is het belangrijk dat iemand beter wordt. De bedrijfsarts helpt daarbij door op medisch gebied te adviseren. Voor zowel werkgever als werknemer zorgt dit dat de kosten door ziekte zo laag mogelijk is. Hoe zit dat als de werkgever ook de werknemer is?**
 <!-- more -->
 
@@ -26,7 +25,9 @@ Van zowel de werkgever als de werknemer wordt verwacht dat ze alles doen om ervo
 In de tussentijd gaat het hopelijk beter met de zieke en kan deze misschien al iets van werk gaan doen, het "re-integreren". Niet alleen fijn voor de werkgever en werknemer, maar ook een verplichting vanuit de wet *([zie ''Werkwijzer Poortwachter']({{< ref "#bronnen" >}}))*.
 
 ## De bedrijfsarts is er voor de werkgever
-De werkgever begrijpt alleen soms helemaal niets van 'ziekte'. Ook is het erg persoonlijke informatie voor de werknemer. Een werkgever mag het zelfs helemaal niet weten wat er aan de hand is en heeft alleen recht op praktische informatie *([zie 'De zieke werknemer']({{< ref "#bronnen" >}}))*! Hoe moet deze dan weten:
+De werkgever begrijpt alleen soms helemaal niets van 'ziekte'. Ook is het erg persoonlijke informatie voor de werknemer. Een werkgever mag het zelfs helemaal niet weten wat er aan de hand is en heeft alleen recht op praktische informatie! *([zie 'De zieke werknemer']({{< ref "#bronnen" >}}))*
+
+Hoe moet deze dan weten:
 * hoe lang een werknemer weg blijft - *een griepje of een lange behandeling*,
 * of deze werknemers iets bijzonders nodig - *een zit/sta-bureau bij rugklachten*,
 * of wat de werknemer nog wél kan doen - *administratie bij een timmerman*.
@@ -35,7 +36,7 @@ Daarvoor is de bedrijfsarts! Het is een persoon met medische kennis, een arts, d
 
 > Bedrijfsarts: een persoon met medische kennis, een arts, die weet wat van belang is bij het werk en bij het bedrijf. 
 
-Ook verplicht {{% abbr text="De Wet" title="[Arbeidsomstandighedenwet Artikel 14](https://wetten.overheid.nl/jci1.3:c:BWBR0010346&hoofdstuk=3&artikel=14)" %}} trouwens bedrijven om een bedrijfsarts in te schakelen bij ziekte.. Niet helemaal onbelangrijk natuurlijk.
+Ook verplicht {{< abbr text="de Arbeidsomstandighedenwet" title="Arbeidsomstandighedenwet Artikel 14 lid 2" >}} bedrijven om een bedrijfsarts in te schakelen bij ziekte.. Niet helemaal onbelangrijk natuurlijk.
 
 ## De bedrijfsarts is er voor de zieke werknemer
 Ook de werknemer krijgt adviezen van de bedrijfsarts. Soms is dit een behandeling die goed kan werken ,een verwijzing naar een expert (een specialist, coach of andere begeleider) maar meestal is het in de vorm van mogelijkheden.
