@@ -83,6 +83,6 @@ collections:
               options: ['cover','horizontal', 'vertical']
               default: 'cover'
         - { label: 'Inhoud', name: 'body', widget: 'markdown' }
-        - { label: 'Categoriën', name: 'categories', widget: 'list' }
-        - { label: 'Tags', name: 'tags', widget: 'list' }
+        - { label: 'Categoriën', name: 'categories', widget: 'list', required: true }
+        - { label: 'Tags', name: 'tags', widget: 'list', required: true }
         - { label: 'Commentaar', name: 'comments', widget: 'boolean', default: true }

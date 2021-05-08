@@ -9,6 +9,13 @@ description: Heel veel mensen denken dat omdat de werkgever de bedrijfsarts
   is. Hoe zit dat als de werkgever ook de werknemer is?
 date: 2021-05-08T18:16:02.496Z
 lastmod: 2021-05-08T18:16:02.523Z
+tags:
+  - Visie
+  - ZZP
+  - Uitleg
+  - Rol van de bedrijfsarts
+categories:
+  - Uitleg
 images:
   - stretch: cover
     alt: De dokter geeft een hand aan de patiënt
