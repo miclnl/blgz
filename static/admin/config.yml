@@ -1,19 +1,19 @@
 ﻿backend:
-  name: git-gateway
-  branch: main
+    name: 'git-gateway'
+    branch: 'main'
 
-media_folder: "static/img" # Folder where user uploaded files should go
-public_folder: "img"
-publish_mode: editorial_workflow
+media_folder: 'static/img' # Folder where user uploaded files should go
+public_folder: 'img'
+publish_mode: 'editorial_workflow'
 
 slug:
-  encoding: "ascii"
-  clean_accents: true
-  sanitize_replacement: "_"
+    encoding: "ascii"
+    clean_accents: true
+    sanitize_replacement: "_"
 
 collections:
     - name: 'algemeen'
-      label: 'Algemene pagina\'s'
+      label: 'Algemene paginas'
       delete: false
       create: false
       files:
@@ -60,23 +60,23 @@ collections:
         - { label: 'Omschrijving', name: 'description', widget: 'string' }
         - { label: 'Publicatie datum', name: 'date', widget: 'datetime' }
         - { label: 'Laatst aangepast', name: 'lastmod', widget: 'datetime' }
-        - label: 'Image'
-          name: 'images'
+        - name: 'images'
+          label: 'Plaatjes'
           widget: 'list'
           required: false
           summary: '{{fields.alt}}'
           fields:
-            - label: 'Image'
-              name: 'src'
+            - name: 'src'
+              label: 'Plaatje'
               widget: 'image'
               required: false
-            - label: 'Alternatieve tekst'
-              name: 'alt'
+            - name: 'alt'
+              label: 'Alternatieve tekst'
               widget: 'string'
               hint: 'Zet hier de ondertitel/alternatieve tekst'
               required: false
-            - label: 'Uitrekken'
-              name: 'stretch'
+            - name: 'stretch'
+              label: 'Uitrekken'
               widget: 'select'
               options: ['cover','horizontal', 'vertical']
               default: 'cover'
