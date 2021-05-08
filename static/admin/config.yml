@@ -13,7 +13,7 @@ slug:
 
 collections:
     - name: 'Algemeen'
-      label: 'Algemene pagina's'
+      label: 'Algemene pagina\'s'
       delete: false
       create: false
       files:
