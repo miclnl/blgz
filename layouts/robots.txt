@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: {{ if not .Params.Site.robots }}/{{end}}
+Disallow: admin/

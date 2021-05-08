@@ -20,7 +20,7 @@ disableLanguages        = ["en"]
   enableCDN             = true
   cssFiles              = ["default"]
   jsFiles               = ["default"]
-  highlightjs           = true
+  highlightjs           = false
   highlightjsTheme      = ""
   highlightjsLang       = []
   viewMorePostsLink     = "blog"
@@ -30,6 +30,7 @@ disableLanguages        = ["en"]
   socialShare           = ["twitter", "facebook", "reddit", "linkedin", "pinterest", "email"]
   hideEmptyStats        = true
   robots                = false
+  enableRobotsTXT       = true
 
   [params.meta]
     description         = "Gezond aan het werk!"
