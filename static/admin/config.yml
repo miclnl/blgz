@@ -12,7 +12,7 @@ slug:
   sanitize_replacement: "_"
 
 collections:
-    - name: 'Algemeen'
+    - name: 'algemeen'
       label: 'Algemene pagina\'s'
       delete: false
       create: false
