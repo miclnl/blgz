@@ -12,44 +12,39 @@ slug:
   sanitize_replacement: "_"
 
 collections:
-    - name: 'about'
-      label: 'About'
-      folder: 'content/about'
+    - name: 'Algemeen'
+      label: 'Algemene pagina's'
       delete: false
       create: false
-      path: 'index'
-      fields:
-        - { label: 'Titel', name: 'title', widget: 'string' }
-        - { label: 'Auteur', name: 'author', widget: 'string' }
-        - { label: 'Omschrijving', name: 'description', widget: 'string' }
-        - { label: 'Publicatie datum', name: 'date', widget: 'datetime' }
-        - { name: 'layout', widget: 'hidden', default: 'about' }
-        - { label: 'Inhoud', name: 'body', widget: 'markdown' }
-    - name: 'privacy'
-      label: 'Privacy beleid'
-      folder: 'content/privacybeleid'
-      delete: false
-      create: false
-      path: 'index'
-      fields:
-        - { label: 'Titel', name: 'title', widget: 'string' }
-        - { label: 'Auteur', name: 'author', widget: 'string' }
-        - { label: 'Omschrijving', name: 'description', widget: 'string' }
-        - { label: 'Publicatie datum', name: 'date', widget: 'datetime' }
-        - { name: 'layout', widget: 'hidden', default: 'about' }
-        - { label: 'Inhoud', name: 'body', widget: 'markdown' }
-    - name: 'contact'
-      label: 'Contact'
-      folder: 'content/contact'
-      delete: false
-      create: false
-      path: 'index'
-      fields:
-        - { label: 'Titel', name: 'title', widget: 'string', default: 'Contact' }
-        - { label: 'Hoeveel uur tot antwoord', name: 'contactanswertime', widget: 'string' }
-        - { name: 'layout', widget: 'hidden', default: 'about' }
-        - { name: 'netlify', widget: 'hidden', default: true }
-        
+      files:
+        - name: 'about'
+          label: 'Over..'
+          file: 'content/about/index.md'
+          fields:
+            - { label: 'Titel', name: 'title', widget: 'string' }
+            - { label: 'Auteur', name: 'author', widget: 'string' }
+            - { label: 'Omschrijving', name: 'description', widget: 'string' }
+            - { label: 'Publicatie datum', name: 'date', widget: 'datetime' }
+            - { name: 'layout', widget: 'hidden', default: 'about' }
+            - { label: 'Inhoud', name: 'body', widget: 'markdown' }
+        - name: 'privacy'
+          label: 'Privacy beleid'
+          file: 'content/privacybeleid/index.md'
+          fields:
+            - { label: 'Titel', name: 'title', widget: 'string' }
+            - { label: 'Auteur', name: 'author', widget: 'string' }
+            - { label: 'Omschrijving', name: 'description', widget: 'string' }
+            - { label: 'Publicatie datum', name: 'date', widget: 'datetime' }
+            - { name: 'layout', widget: 'hidden', default: 'about' }
+            - { label: 'Inhoud', name: 'body', widget: 'markdown' }
+        - name: 'contact'
+          label: 'Contact'
+          file: 'content/contact/index.md'
+          fields:
+            - { label: 'Titel', name: 'title', widget: 'string', default: 'Contact' }
+            - { label: 'Hoeveel uur tot antwoord', name: 'contactanswertime', widget: 'string' }
+            - { name: 'layout', widget: 'hidden', default: 'about' }
+            - { name: 'netlify', widget: 'hidden', default: true }
     - name: 'blog'
       label: 'Blog'
       folder: 'content/blog'
