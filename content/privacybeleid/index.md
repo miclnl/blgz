@@ -21,7 +21,7 @@ Zelfstandig Gezond verwerkt je persoonsgegevens omdat je deze gegevens zelf aan 
 ## Bijzondere en/of gevoelige persoonsgegevens die wij verwerken
 Onze website en/of dienst heeft niet de intentie gegevens te verzamelen over websitebezoekers die jonger zijn dan 16 jaar. Tenzij ze toestemming hebben van ouders of voogd. 
 
-We kunnen echter niet controleren of een bezoeker ouder dan 16 is. Wij raden ouders dan ook aan betrokken te zijn bij de online activiteiten van hun kinderen, om zo te voorkomen dat er gegevens over kinderen verzameld worden zonder ouderlijke toestemming. Als je er van overtuigd bent dat wij zonder die toestemming persoonlijke gegevens hebben verzameld over een minderjarige, neem dan contact met ons op via privacy@zelfstandiggezond.nl, dan verwijderen wij deze informatie.
+We kunnen echter niet controleren of een bezoeker ouder dan 16 is. Wij raden ouders dan ook aan betrokken te zijn bij de online activiteiten van hun kinderen, om zo te voorkomen dat er gegevens over kinderen verzameld worden zonder ouderlijke toestemming. Als je er van overtuigd bent dat wij zonder die toestemming persoonlijke gegevens hebben verzameld over een minderjarige, neem dan [contact met ons op](https://www.zelfstandiggezond.nl/contact), dan verwijderen wij deze informatie.
 
 ## Met welk doel en op basis van welke grondslag wij persoonsgegevens verwerken
 Zelfstandig Gezond verwerkt jouw persoonsgegevens voor de volgende doelen:
@@ -39,19 +39,19 @@ Wij hanteren uiterlijk de wettelijke bewaartermijnen voor de bovengenoemde perso
 ## Delen van persoonsgegevens met derden
 Zelfstandig Gezond verstrekt uitsluitend aan derden en alleen als dit nodig is voor de uitvoering van onze overeenkomst met jou of om te voldoen aan een wettelijke verplichting.
 
-##Cookies, of vergelijkbare technieken, die wij gebruiken
+## Cookies, of vergelijkbare technieken, die wij gebruiken
 Zelfstandig Gezond maakt gebruik van enkele externe diensten voor functionaliteit van de website:
 
-* Interactie met externe sociale netwerken en platforms
+* **Interactie met externe sociale netwerken en platforms**
   * Tweet-knop van Twitter en sociale widgets - Persoonsgegevens: Gebruiksgegevens; Tracker
-* Spambescherming
+* **Spambescherming**
   * Google reCAPTCHA - Persoonsgegevens: Gebruiksgegevens; Tracker
-* Weergave van content van externe platforms
+* **Weergave van content van externe platforms**
   * Google Fonts - Persoonsgegevens: Gebruiksgegevens; verschillende Gegevenstypes die in het privacybeleid van de service zijn omschreven
   * Font Awesome - Persoonsgegevens: Gebruiksgegevens
-* Analyse van verkeer
+* **Analyse van verkeer**
   * Counter.dev - Persoonsgegevens: Gebruiksgegevens
-* Hosting
+* **Hosting**
   * Netlify - verschillende Gegevenstypes die in het privacybeleid van de service zijn omschreven
   * Heruko (voor commentaarfunctie) - verschillende Gegevenstypes die in het privacybeleid van de service zijn omschreven
 
@@ -63,7 +63,7 @@ Voor het inzien, corrigeren of verwijderen van je persoonsgegevens op een van de
 ## Hoe wij persoonsgegevens beveiligen
 Zelfstandig Gezond neemt de bescherming van jouw gegevens serieus en neemt passende maatregelen om misbruik, verlies, onbevoegde toegang, ongewenste openbaarmaking en ongeoorloofde wijziging tegen te gaan.
 
-Als jij het idee hebt dat jouw gegevens toch niet goed beveiligd zijn of er zijn aanwijzingen van misbruik, neem dan contact [met ons op](https://www.zelfstandiggezond.nl/contact). Zelfstandig Gezond heeft de volgende maatregelen genomen om jouw persoonsgegevens te beveiligen: 
+Als jij het idee hebt dat jouw gegevens toch niet goed beveiligd zijn of er zijn aanwijzingen van misbruik, neem dan [contact met ons op](https://www.zelfstandiggezond.nl/contact). Zelfstandig Gezond heeft de volgende maatregelen genomen om jouw persoonsgegevens te beveiligen: 
 
 * Wij vragen het minimum aan gegevens die we nodig hebben.
 * Beveiligingssoftware, zoals een virusscanner en firewall.
