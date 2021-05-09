@@ -87,7 +87,7 @@ collections:
               widget: 'select'
               options: ['cover','horizontal', 'vertical']
               default: 'cover'
-        - { label: 'Inhoud', name: 'body', widget: 'markdown', hint: 'Shortcodes:<ul><li>{{< abbr title= text= >}}</li></ul>' }
+        - { label: 'Inhoud', name: 'body', widget: 'markdown', hint: 'Shortcodes:{{< abbr title= text= >}},  {{< blockquote author= source= link= title= >}}, {{< imgcap src= title= >}}' }
         - { label: 'Categoriën', name: 'categories', widget: 'list', required: true }
         - { label: 'Tags', name: 'tags', widget: 'list', required: true }
         - { label: 'Commentaar', name: 'comments', widget: 'boolean', default: true }
