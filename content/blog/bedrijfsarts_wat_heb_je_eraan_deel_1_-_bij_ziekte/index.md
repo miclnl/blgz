@@ -1,21 +1,21 @@
 ---
-title: "Bedrijfsarts, wat heb je eraan: Bij ziekte"
+title: "Bedrijfs&shy;arts, wat heb je eraan: Bij ziekte"
 author: Zelfstandig Gezond
 description: Deel 1 - Wat heb je aan een bedrijfsarts bij ziekte
 date: 2021-05-08T18:16:02.496Z
 lastmod: 2021-05-08T18:16:02.523Z
-tags:
-  - Visie
-  - ZZP
-  - Uitleg
-  - Rol van de bedrijfsarts
-categories:
-  - Uitleg
 images:
   - stretch: cover
     alt: De dokter geeft een hand aan de patiënt
     attributed: Foto door ijeab (www.freepik.com)
     src: doctor-patient.jpg
+categories:
+  - Uitleg
+tags:
+  - Visie
+  - ZZP
+  - Uitleg
+  - Rol van de bedrijfsarts
 comments: true
 ---
 **Veel mensen denken dat als de werkgever de bedrijfsarts betaalt, deze ook bepaald wat er gebeurd bij ziekte. Dat is niet zo! Voor de werkgever en werknemer is het belangrijk dat iemand beter wordt. De bedrijfsarts helpt daarbij door op medisch gebied te adviseren. Voor zowel werkgever als werknemer zorgt dit dat de kosten door ziekte zo laag mogelijk is. Hoe zit dat als de werkgever ook de werknemer is?**
