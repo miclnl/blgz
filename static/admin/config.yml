@@ -71,12 +71,17 @@ collections:
             - name: 'src'
               label: 'Plaatje'
               widget: 'image'
-              required: false
+              required: true
             - name: 'alt'
               label: 'Alternatieve tekst'
               widget: 'string'
               hint: 'Zet hier de ondertitel/alternatieve tekst'
-              required: false
+              required: true
+            - name: 'attributed'
+              label: 'Copyrightgegevens'
+              widget: 'string'
+              hint: 'Zet hier de copyrightekst neer'
+              required: true
             - name: 'stretch'
               label: 'Uitrekken'
               widget: 'select'
