@@ -53,7 +53,7 @@ disableLanguages        = ["en"]
     paragraph             = "Helpt jou om gezond zelfstandig te zijn"
     rssIntro              = true
     socialIntro           = true
-    hideWhenSingleColumn  = false
+    hideWhenSingleColumn  = true
     alwaysOnHomepage      = true
 
     [params.intro.pic]
