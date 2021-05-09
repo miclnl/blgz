@@ -88,6 +88,6 @@ collections:
               options: ['cover','horizontal', 'vertical']
               default: 'cover'
         - { label: 'Inhoud', name: 'body', widget: 'markdown', hint: 'Shortcodes:{{< abbr title= text= >}},  {{< blockquote author= source= link= title= >}}, {{< imgcap src= title= >}}' }
-        - { label: 'Categoriën', name: 'categories', widget: 'string', required: true, hint: 'Hou het bij één categorie!' }
+        - { label: 'Categoriën', name: 'categories', widget: 'list', required: true, hint: 'Hou het bij één categorie!' }
         - { label: 'Tags', name: 'tags', widget: 'list', required: true }
         - { label: 'Commentaar', name: 'comments', widget: 'boolean', default: true }
