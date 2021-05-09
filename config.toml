@@ -192,3 +192,7 @@ disableLanguages        = ["en"]
  # mastodon              = "example.com/@example"
   # Email
   #email                 = "example"
+
+[imaging]
+  quality = "75"
+  hint = "photo"
