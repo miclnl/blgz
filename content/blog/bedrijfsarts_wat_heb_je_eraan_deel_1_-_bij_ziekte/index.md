@@ -1,12 +1,7 @@
 ---
-title: "Bedrijfsarts, wat heb je eraan: Deel 1 - bij ziekte"
+title: "Bedrijfsarts, wat heb je eraan: Bij ziekte"
 author: Zelfstandig Gezond
-description: Heel veel mensen denken dat omdat de werkgever de bedrijfsarts
-  betaalt, deze ook bepaald wat er gebeurd bij ziekte. Dat is niet zo! Voor de
-  werkgever en werknemer is het belangrijk dat iemand beter wordt. De
-  bedrijfsarts helpt daarbij door op medisch gebied te adviseren. Voor zowel
-  werkgever als werknemer zorgt dit dat de kosten door ziekte zo laag mogelijk
-  is. Hoe zit dat als de werkgever ook de werknemer is?
+description: Deel 1 - Wat heb je aan een bedrijfsarts bij ziekte
 date: 2021-05-08T18:16:02.496Z
 lastmod: 2021-05-08T18:16:02.523Z
 tags:
@@ -19,11 +14,11 @@ categories:
 images:
   - stretch: cover
     alt: De dokter geeft een hand aan de patiënt
-    attributed: Foto door ijeab www.freepik.com
+    attributed: Foto door ijeab (www.freepik.com)
     src: doctor-patient.jpg
 comments: true
 ---
-**Heel veel mensen denken dat omdat de werkgever de bedrijfsarts betaalt, deze ook bepaald wat er gebeurd bij ziekte. Dat is niet zo! Voor de werkgever en werknemer is het belangrijk dat iemand beter wordt. De bedrijfsarts helpt daarbij door op medisch gebied te adviseren. Voor zowel werkgever als werknemer zorgt dit dat de kosten door ziekte zo laag mogelijk is. Hoe zit dat als de werkgever ook de werknemer is?**
+**Veel mensen denken dat als de werkgever de bedrijfsarts betaalt, deze ook bepaald wat er gebeurd bij ziekte. Dat is niet zo! Voor de werkgever en werknemer is het belangrijk dat iemand beter wordt. De bedrijfsarts helpt daarbij door op medisch gebied te adviseren. Voor zowel werkgever als werknemer zorgt dit dat de kosten door ziekte zo laag mogelijk is. Hoe zit dat als de werkgever ook de werknemer is?**
 <!-- more -->
 
 ## Het traject van ziekte
@@ -73,7 +68,7 @@ De zelfstandige wendt zich dan tot de huisarts. De huisarts helpt de zelfstandig
 ## Waarom is er nog geen bedrijfsarts voor de ZZP
 Er is op dit moment alleen nog niets geregeld voor zelfstandigen. Dat komt door geld.. Grotere bedrijven worden verplicht om een bedrijfsarts te regelen en er zijn zat arbodiensten die op maat pakketten kunnen leveren op basis van het aantal medewerkers. Zelfstandigen zijn voor een arbodienst alleen niet interessant.
 
-De arbodiensten zijn gericht op massa; het liefst zo groot mogelijke klanten, zodat ze afkunnen met een *casemanager* per bedrijf en het kunnen koppelen met zo weinig mogelijk bedrijfsartsen. Deze kent het bedrijf (in meer of mindere mate) en kan dan adviseren bij ziekte. Dat systeem werkt bij zelfstandigen niet.. Iedere zieke is een bedrijf op zich; geen enkele zelfstandige heeft namelijk dezelfde situatie en de verschillen zijn veel groter dan bij grotere bedrijven bij elkaar in een branche.
+De arbodiensten zijn gericht op massa; het liefst zo groot mogelijke klanten, zodat ze afkunnen met een *casemanager* per bedrijf en het kunnen koppelen met zo weinig mogelijk bedrijfsartsen. Deze kent het bedrijf (in meer of mindere mate) en kan dan adviseren bij ziekte. Dat systeem werkt bij zelfstandigen niet. Iedere zieke is een bedrijf op zich; geen enkele zelfstandige heeft namelijk dezelfde situatie en de verschillen zijn veel groter dan bij grotere bedrijven bij elkaar in een branche.
 
 ## Wat is er nodig
 Er is en specialist nodig die goede adviezen kan geven aan individuen. Deze is er helaas nog niet. Ik probeer op dit blog me meer te richten op de zelfstandige; zodat deze niet in dit grote zwarte gat valt voor, tijdens en na ziekte.

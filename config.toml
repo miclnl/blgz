@@ -7,7 +7,7 @@ theme                   = "hugo-future-imperfect-slim"
 paginate                = 3
 #disqusShortname         = "zelfstandig-gezond"
 googleAnalytics         = ""
-pluralizeListTitles     = false
+pluralizeListTitles     = true
 disableLanguages        = ["en"]
 
 [markup.goldmark.renderer]
@@ -42,8 +42,8 @@ disableLanguages        = ["en"]
     iOSColor            = "#ffffff"
 
   [params.header]
-    navbarTitle         = "Z-G"
-    dynamicTitles       = true
+    navbarTitle         = "Zelfstandig Gezond"
+    dynamicTitles       = false
     searchMenu          = true
     shareMenu           = true
     languageMenu        = false
@@ -54,7 +54,7 @@ disableLanguages        = ["en"]
     rssIntro              = true
     socialIntro           = true
     hideWhenSingleColumn  = false
-    alwaysOnHomepage      = false
+    alwaysOnHomepage      = true
 
     [params.intro.pic]
       src                 = "img/main/logo_mini.svg"
@@ -64,7 +64,7 @@ disableLanguages        = ["en"]
 
   [params.sidebar]
     about               = "Hier schrijven we over manieren waarop je gezond aan het werk kan blijven."
-    postAmount          = 5
+    postAmount          = 3
     categories          = true
     categoriesByCount   = true
 
