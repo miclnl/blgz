@@ -24,7 +24,7 @@ comments: true
 ## Het traject van ziekte
 Van zowel de werkgever als de werknemer wordt verwacht dat ze alles doen om ervoor te zorgen dat de werknemer weer zo snel mogelijk weer beter gemeld kan worden. Om die reden gaat de zieke werknemer naar de huisarts, specialist of andere hulpverlener en betaalt de werkgever een deel van het salaris door tijdens ziekte; zodat dat niet óók nog een probleem wordt.
 
-In de tussentijd gaat het hopelijk beter met de zieke en kan deze misschien al iets van werk gaan doen, het "re-integreren". Niet alleen fijn voor de werkgever en werknemer, maar ook een verplichting vanuit de wet *([zie ''Werkwijzer Poortwachter']({{< ref "#bronnen" >}}))*.
+In de tussentijd gaat het hopelijk beter met de zieke en kan deze misschien al iets van werk gaan doen, het "re-integreren". Niet alleen fijn voor de werkgever en werknemer, maar ook een verplichting vanuit de wet *([zie 'Werkwijzer Poortwachter']({{< ref "#bronnen" >}}))*.
 
 ## De bedrijfsarts is er voor de werkgever
 De werkgever begrijpt alleen soms helemaal niets van 'ziekte'. Ook is het erg persoonlijke informatie voor de werknemer. Een werkgever mag het zelfs helemaal niet weten wat er aan de hand is en heeft alleen recht op praktische informatie! *([zie 'De zieke werknemer']({{< ref "#bronnen" >}}))*
