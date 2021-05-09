@@ -2,7 +2,7 @@
 title: Privacybeleid Zelfstandig Gezond
 author: Zelfstandig Gezond
 description: Het privacy- en cookiebeleid van Zelfstandig Gezond
-date: 2021-05-08T10:20:47.105Z
+date: 2021-05-09T09:29:19.873Z
 layout: about
 ---
 Zelfstandig Gezond is verantwoordelijk voor de verwerking van persoonsgegevens zoals weergegeven in deze privacyverklaring.
