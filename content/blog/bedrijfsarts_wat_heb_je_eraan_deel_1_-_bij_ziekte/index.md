@@ -18,7 +18,7 @@ images:
     src: doctor-patient.jpg
 comments: true
 ---
-**Veel mensen denken dat als de werkgever de bedrijfsarts betaalt, deze ook bepaald wat er gebeurd bij ziekte. Dat is niet zo! Voor de werkgever en werknemer is het belangrijk dat iemand beter wordt. De bedrijfsarts helpt daarbij door op medisch gebied te adviseren. Voor zowel werkgever als werknemer zorgt dit dat de kosten door ziekte zo laag mogelijk is. Hoe zit dat als de werkgever ook de werknemer is?**
+**Veel mensen denken dat als de werkgever de bedrijfsarts betaalt, deze ook bepaalt wat er gebeurd bij ziekte. Dat is niet zo! Voor de werkgever en werknemer is het belangrijk dat iemand beter wordt. De bedrijfsarts helpt daarbij door op medisch gebied te adviseren. Voor zowel werkgever als werknemer zorgt dit dat de kosten door ziekte zo laag mogelijk is. Hoe zit dat als de werkgever ook de werknemer is?**
 <!-- more -->
 
 ## Het traject van ziekte
