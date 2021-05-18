@@ -1,6 +1,7 @@
 $(document).ready(function() {
-  $('.new-comment').submit(function () {
+  $('.new-comment').submit(function (evt) {
     var form = this;
+	evt.preventDefault();
 
     $(form).addClass('loading');
     $('input[type="submit"]:enabled').addClass('hidden'); // hide "submit"
