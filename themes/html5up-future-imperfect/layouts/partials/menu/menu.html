@@ -1,0 +1,39 @@
+<header id="header">
+	 <h1><a href="{{ "/" | relLangURL }}">
+        {{ if or .IsHome (not .Site.Params.header.dynamicTitles) }}
+          {{ .Site.Params.header.navbarTitle  | safeHTML }}
+        {{ else }}
+          {{ i18n .Section | default .Title }}
+        {{ end }}
+      </a></h1>
+	<nav class="links">
+		<ul>
+			{{ range .Site.Menus.main }}
+			<li><a href="{{ .URL | relLangURL }}">{{ .Pre | safeHTML}} {{ .Name }}</a></li>
+			{{ end }}
+		</ul>
+	</nav>
+	<nav class="main">
+		<ul>
+			{{ if .Site.Params.header.searchMenu }}
+			<li class="search">
+				<a class="fa-search" href="#search">Zoek</a>
+				<form id="search" method="get" action="#">
+					<input type="text" name="query" placeholder="Zoeken" />
+				</form>
+			</li>
+			{{ end }}
+			{{ if .Site.Params.header.shareMenu }}
+			<li class="menu">
+				<a class="fa-bars" href="#menu">Deel</a>
+			</li>
+			{{ end }}
+		</ul>
+	</nav>
+</header>
+{{ if or .Site.Params.header.shareMenu .Site.Params.header.searchMenu }}
+<section id="menu">
+{{ if .Site.Params.header.shareMenu }}{{ partial "menu/share.html" . }}{{ end }}
+{{ if .Site.Params.header.searchMenu }}{{ partial "menu/search.html" . }}{{ end }}
+</section>
+{{ end }}

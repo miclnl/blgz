@@ -1,0 +1,24 @@
+{{ if or (not .Site.Params.intro.hideWhenSingleColumn) (and .Page.IsHome .Site.Params.intro.alwaysOnHomepage) }}
+<section id="sidebar">
+		{{ partial "sidebar/intro.html" . }}
+	{{ if gt .Site.Params.sidebar.postAmount 0 }}
+			<section>
+				<div class="mini-posts">
+				{{ range first (.Site.Params.sidebar.postAmount | default 5) (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+					{{ partial "sidebar/posts.html" . }}
+				{{ end }}
+				</div>
+			</section>
+	{{ end }}
+
+	{{ if .Site.Params.sidebar.about }}
+			<section class="blurb">
+				<h2>{{ i18n "about" }}</h2>
+				<p>{{ .Site.Params.sidebar.about | safeHTML }}</p>
+				<ul class="actions">
+					<li><a href="about" class="button">{{ i18n "learn_more" }}</a></li>
+				</ul>
+			</section>
+	{{ end }}
+</section>
+{{ end }}

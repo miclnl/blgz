@@ -1,0 +1,7 @@
+<section>
+	<ul class="links">
+		{{ range .Site.Menus.main }}
+		<li><a href="{{ .URL | relLangURL }}"><h3>{{ .Pre | safeHTML}} {{ .Name }}</h3></a></li>
+		{{ end }}
+	</ul>
+</section>

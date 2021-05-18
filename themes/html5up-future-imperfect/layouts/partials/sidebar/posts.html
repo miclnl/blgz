@@ -1,0 +1,16 @@
+<article class="mini-post">
+	<header>
+		<h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+		<time class="published" datetime="{{ .Date }}">{{ .Render "date" }}</time>
+	</header>
+	
+	{{- $coverImage := .Resources.GetMatch "cover" }}
+	{{ if ($coverImage) }}
+		{{ .Scratch.Set "renderSize" "720x" }}
+		{{ .Scratch.Set "renderArgs" "q85 Box" }}
+		{{ .Scratch.Set "renderImageClass" "image" }}
+		{{ .Scratch.Set "renderCredits" false }}
+		
+		{{ partial "helper/img.html" . }}
+	{{ end }}	
+</article>

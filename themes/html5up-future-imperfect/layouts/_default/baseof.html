@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="{{ .Site.LanguageCode }}">
+    <head>
+        {{- partial "head/head.html" . -}}
+    </head>
+    <body class="{{ block `body-class` . }}{{ end }}">
+		<div id="wrapper">
+			{{- partial "menu/menu.html" . -}}
+            <main id="main">
+                {{- block "main" . }}{{- end }}
+            </main>
+           {{- partial "sidebar/main.html" . -}} 
+		</div>
+		{{- partialCached "footer/main.html" . -}}
+		{{- partial "scripts.html" . -}}
+    </body>
+</html>

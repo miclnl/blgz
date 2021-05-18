@@ -1,0 +1,21 @@
+name = "HTML5UP Future Imperfect"
+license = "Creative Commons Attribution 3.0 Unported"
+licenselink = "https://html5up.net/future-imperfect"
+description = "Future Imperfect Theme"
+homepage = "https://html5up.net/future-imperfect"
+tags = ["Academic", "Academicons", "Blog", "Contact Form", "CSS Grid", "Disqus",
+        "Fancybox", "Font Awesome", "Gallery", "Google Analytics", "Google News",
+        "Highlight.js", "Jquery", "Lunr.js", "Multilingual", "Netlify",
+        "Responsive", "Search",  "Open Graph", "Staticman", "Syntax Highlighting",
+        "Twitter Cards", "Utteranc.es"]
+features = ["Academicons v1.8.6", "Disqus", "Fancybox v3.5.7", "Font Awesome v5.13.0",
+            "Google Analytics", "Google News", "Highlight.js v10.6.0", "Jquery v3.5.1",
+            "Lunr.js v2.3.8", "Netlify", "Open Graph", "Staticman", "Theme Update Notification",
+            "Twitter Cards", "Utteranc.es"]
+min_version = "v0.62.0/extended"
+
+# If porting an existing theme
+[original]
+  name = "Future Imperfect"
+  homepage = "https://github.com/jpescador/hugo-future-imperfect"
+  repo = "https://github.com/jpescador/hugo-future-imperfect"

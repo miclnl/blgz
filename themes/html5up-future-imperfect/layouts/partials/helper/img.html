@@ -1,0 +1,17 @@
+{{ $imageResource := .Resources.GetMatch "cover" }}
+{{ $resizedImage := $imageResource.Resize (print (.Scratch.Get "renderSize") " " (.Scratch.Get "renderArgs")) }}
+{{ $webpImage := $resizedImage.Resize (print (.Scratch.Get "renderSize") " photo webp") }}
+
+<a href="{{ .Permalink |absURL }}">
+	<figure class="{{ .Scratch.Get "renderImageClass" }}">
+		<picture layout="responsive">
+			<source srcset="{{ $webpImage.RelPermalink | absURL }}">
+			<img src="{{ $resizedImage.RelPermalink | absURL }}" alt="{{ $imageResource.Title }} - {{ $imageResource.Params.credits }}" defer>
+		</picture>
+		{{ if (.Scratch.Get "renderCredits") }}
+		<figcaption class="image credits">
+		{{ $imageResource.Params.credits }}
+		</figcaption>
+	    {{ end }}
+	</figure>
+</a>

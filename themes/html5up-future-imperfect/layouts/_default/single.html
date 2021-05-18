@@ -1,0 +1,37 @@
+{{ define "main" }}
+	<article class="post">
+		{{ partial "article/header.html" . }}
+		{{ partial "share-buttons.html" . }}
+		{{ .Content }}
+		<footer>
+			<ul class="stats">
+				{{ if .Params.categories }}
+				<ul class="categories">
+				{{ with index .Params.categories 0 }}<li><a href="{{ path.Join "categories" (. | urlize | lower) | relLangURL }}">{{ . }}</a></li>{{ end}}
+				</ul>
+				{{ end }}
+				{{ if .Params.tags }}
+				<ul class="tags">
+				{{ with .Params.tags }}
+					{{ range . }}
+						<li><a class="article-terms-link" href="{{ path.Join "tags" (. | urlize | lower) | relLangURL }}/">{{ . }}</a></li>
+					{{ end }}
+				{{ end }}
+				</ul>
+				{{ end }}
+			</ul>
+			
+		</footer>
+		{{ if and .Params.comments .Site.Params.enableComments }}
+			{{ .Render "comments" }}
+		{{ end }}
+	</article>
+	<ul class="actions pagination">
+		{{ if .PrevInSection }}
+			<li><a href="{{ .PrevInSection.RelPermalink }}" class="button large previous">{{ .PrevInSection.Title }}</a></li>
+		{{ end }}
+		{{ if .NextInSection }}
+		  <li><a href="{{ .NextInSection.RelPermalink}}" class="button large next">{{ .NextInSection.Title }}</a></li>
+		{{ end }}
+	</ul>
+{{ end }}

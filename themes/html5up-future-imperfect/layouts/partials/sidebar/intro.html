@@ -1,0 +1,7 @@
+<section id="intro">
+	{{ if false }}{{ with .Site.Params.intro.pic }}<a href="/" class="logo"><img src="{{ .src | absURL }}" alt="{{ .alt }}" /></a>{{ end }}{{ end }}
+	<header>
+		<a href="/"><h2>{{ .Site.Params.intro.header | safeHTML }}</h2></a>
+		<p>{{ .Site.Params.intro.paragraph | safeHTML }}</p>
+	</header>
+</section>

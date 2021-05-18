@@ -1,0 +1,10 @@
+User-agent: *
+
+{{ if .Site.Params.robots }}
+Disallow: admin
+{{ else }}
+
+	{{range .Pages}}
+		Disallow: {{.RelPermalink}}
+	{{end}}
+{{ end }}

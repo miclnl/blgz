@@ -1,0 +1,9 @@
+<section id="footer">
+		<ul class="icons">
+			{{ with .OutputFormats.Get "RSS" }}<li><a href="{{ .RelPermalink }}" type="application/rss+xml" target="_blank" rel="noopener" title="RSS" class="icon solid fa-rss"></a></li>{{ end }}
+			{{ if .Site.Params.footer.socialFooter }}{{ partial "helper/icons.html" . }}{{ end }}
+		</ul>
+		<p class="copyright">{{ (.Site.Copyright | safeHTML) | default (print "\u00A9 " .Site.LastChange.Year " " (.Site.Params.author | default .Site.Title)) }}. Generator: <a href="https://gohugo.io/" target="_blank" rel="noopener">HUGO</a>. Ontwerp: <a href="http://html5up.net" target="_blank" rel="noopener">HTML5 UP</a>.</p>
+		<p class="copyright"><a href="{{ absURL "privacybeleid" }}">Privacybeleid</a> | <a href="{{ absURL "about" }}">Over Zelfstandig Gezond</a> | <a href="{{ absURL "sitemap.xml" }}" type="application/xml" target="_blank" rel="noopener" title="Sitemap">Sitemap</a></p>
+	</section>
+	<button onclick="document.body.scrollTop = 0;document.documentElement.scrollTop = 0;" class="button" style='width: fit-content; position: fixed; bottom: 11px; right: 1px;' title="Go to top"><i class="icon solid fa-chevron-circle-up">TOP</i></button>

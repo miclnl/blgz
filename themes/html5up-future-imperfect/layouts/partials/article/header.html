@@ -1,0 +1,23 @@
+<header>
+	<div class="title">
+		<h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+		{{ with .Description }}
+		<p>{{ . }}</p>
+		{{ end }}
+	</div>
+	<div class="meta">
+		<time class="published" datetime="{{ .Date }}">{{ .Render "date" }}</time>
+		{{ with .Params.author }}<span class="author name">Door {{ . }}</span>{{ end }}
+		{{ if .Site.Params.ReadingTime }}<p><time name="reading_time">{{ i18n "reading_time" .ReadingTime }}</time></p>{{ end }}
+	</div>
+	</header>
+	{{- $coverImage := .Resources.GetMatch "cover" }}
+	{{ if ($coverImage) }}
+		{{ .Scratch.Set "renderSize" "720x" }}
+		{{ .Scratch.Set "renderArgs" "q85 box jpg" }}
+		{{ .Scratch.Set "renderImageClass" "image featured" }}
+		{{ .Scratch.Set "renderCredits" true }}
+		
+		{{ partial "helper/img.html" . }}
+	{{ end }}
+	

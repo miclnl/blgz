@@ -1,0 +1,29 @@
+<article class="post">
+	{{ partial "article/header.html" . }}
+	<p>
+	{{ $.Scratch.Set "summary" ((delimit (findRE "<p.*?>(.|\n)*?</p>" .Content 1) "") | truncate (default 500 .Site.Params.summary_length) (default "&hellip;" .Site.Params.text.truncated ) | replaceRE "&amp;" "&" | safeHTML) }}
+	<a href="{{ .RelPermalink }}">{{ $.Scratch.Get "summary" | plainify }} [...]</a>
+	</p>
+	<footer>
+		<p>
+		<ul class="actions">
+			<li><a href="{{ .RelPermalink }}" class="button large">{{ i18n "read_more" }}</a></li>
+		</ul>
+		</p>
+		<span>
+		<ul class="stats">
+			<ul class="categories">
+			{{ with index .Params.categories 0 }}<li><a href="{{ path.Join "categories" (. | urlize | lower) | relLangURL }}">{{ . }}</a></li>{{ end}}
+			</ul>
+			{{ if .Params.tags }}
+			<ul class="tags">
+			{{ with .Params.tags }}
+				{{ range . }}
+					<li><a class="article-terms-link" href="{{ path.Join "tags" (. | urlize | lower) | relLangURL }}/">{{ . }}</a></li>
+				{{ end }}
+			{{ end }}
+			</ul>
+			{{ end }}
+		</ul></span>
+	</footer>
+</article>

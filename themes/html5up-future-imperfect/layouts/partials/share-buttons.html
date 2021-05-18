@@ -1,0 +1,13 @@
+	{{ $.Scratch.Set "summary" ((delimit (findRE "<p.*?>(.|\n)*?</p>" .Content 1) "") | truncate (default 500 .Site.Params.summary_length) (default "&hellip;" .Site.Params.text.truncated ) | replaceRE "&amp;" "&" | safeHTML) }}
+	{{ $.Scratch.Set "summary" ($.Scratch.Get "summary" | plainify | safeHTML ) }}
+	
+<ul class="icons">
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}&quote={{ .Title }}" title="Deel op Facebook" target="_blank" rel="noopener"><img alt="Deel op Facebook" src="/images/flat_web_icon_set/color/Facebook.png" /></a></li>
+  <li><a href="https://twitter.com/intent/tweet?source={{ .Permalink }}&text={{ .Title }}:%20{{ .Permalink }}&via={{ with .Site.Social.twitter}} {{ . }}{{ end }}" target="_blank" rel="noopener" title="Tweet"><img alt="Tweet" src="/images/flat_web_icon_set/color/Twitter.png" /></a></li>
+  <li><a href="http://pinterest.com/pin/create/button/?url={{ .Permalink }}&description={{ $.Scratch.Get "summary" }}" target="_blank" rel="noopener" title="Pin it"><img alt="Pin it" src="/images/flat_web_icon_set/color/Pinterest.png" /></a></li>
+  <li><a href="https://getpocket.com/save?url={{ .Permalink }}&title={{ .Title }}" target="_blank" rel="noopener" title="Toevoegen aan Pocket"><img alt="Toevoegen aan Pocket" src="/images/flat_web_icon_set/color/Pocket.png" /></a></li>
+  <li><a href="http://www.reddit.com/submit?url={{ .Permalink }}&title={{ .Title }}" target="_blank" rel="noopener" title="Stuur naar Reddit"><img alt="Stuur naar Reddit" src="/images/flat_web_icon_set/color/Reddit.png" /></a></li>
+  <li><a href="http://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink }}&title={{ .Title }}&summary={{ $.Scratch.Get "summary" }}&source={{ .Permalink }}" target="_blank" rel="noopener" title="Deel op LinkedIn"><img alt="Deel op LinkedIn" src="/images/flat_web_icon_set/color/LinkedIn.png" /></a></li>
+  <li><a href="http://wordpress.com/press-this.php?u={{ .Permalink }}&quote={{ .Title }}&s={{ $.Scratch.Get "summary" | urlize }}" target="_blank" rel="noopener" title="Publiceer WordPress"><img alt="Publiceer op WordPress" src="/images/flat_web_icon_set/color/Wordpress.png" /></a></li>
+  <li><a href="mailto:?subject={{ .Title }}&body={{ $.Scratch.Get "summary" }}-Lees%20verder%20op%20{{ .Permalink }}" target="_blank" rel="noopener" title="Stuur e-mail"><img alt="Stuur e-mail" src="/images/flat_web_icon_set/color/Email.png" /></a></li>
+</ul>

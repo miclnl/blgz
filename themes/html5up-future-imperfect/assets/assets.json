@@ -1,0 +1,10 @@
+{
+   "styles" : [
+	  "css/main.css"
+   ],
+   "scripts" : [
+      "js/staticman.js",
+      "js/main.js",
+      "js/util.js"
+   ]
+}
