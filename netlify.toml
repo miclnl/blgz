@@ -3,7 +3,7 @@
 
 [build.environment]
     HUGO_VERSION = "0.83.1"
-    HUGO_THEME = "hugo-future-imperfect-slim"
+    HUGO_THEME = "html5up-future-imperfect"
 
 [context.production]
     command = "hugo --gc --minify -b ${URL}"
