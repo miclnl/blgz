@@ -75,6 +75,7 @@ $(document).ready(function() {
   // record reply target when "reply to this comment" is pressed
   $('.comment').on('click', '.comment-reply-btn', function (evt){
     resetReplyTarget();
+	evt.preventDefault();
     var cmt = $(evt.delegateTarget);
     var replyThread = cmt.find('.comment-threadID').text();
     $('.new-comment input[name="fields[replyThread]"]').val(replyThread);
