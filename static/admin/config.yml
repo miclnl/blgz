@@ -46,13 +46,13 @@ collections:
             - { label: 'Hoeveel uur tot antwoord', name: 'contactanswertime', widget: 'string' }
             - { name: 'layout', widget: 'hidden', default: 'about' }
             - { name: 'netlify', widget: 'hidden', default: true }
-    - name: 'blog'
+    - name: 'posts'
       label: 'Blog'
-      folder: 'content/blog'
+      folder: 'content/posts'
       create: true
       delete: true
       path: '{{slug}}/index'
-      preview_path: blog/{{slug}}'
+      preview_path: posts/{{slug}}'
       media_folder: ''
       public_folder: ''
       fields:
@@ -62,31 +62,48 @@ collections:
         - { label: 'Omschrijving', name: 'description', widget: 'string' }
         - { label: 'Publicatie datum', name: 'date', widget: 'datetime' }
         - { label: 'Laatst aangepast', name: 'lastmod', widget: 'datetime' }
-        - name: 'images'
-          label: 'Plaatjes'
-          widget: 'list'
-          required: false
-          summary: '{{fields.alt}}'
+        - name: 'resources'
+          label: 'Resources'
+          widget: 'object'
           fields:
-            - name: 'src'
-              label: 'Plaatje'
-              widget: 'image'
-              required: true
-            - name: 'alt'
-              label: 'Alternatieve tekst'
-              widget: 'string'
-              hint: 'Zet hier de ondertitel/alternatieve tekst'
-              required: true
-            - name: 'attributed'
-              label: 'Copyrightgegevens'
-              widget: 'string'
-              hint: 'Zet hier de copyrightekst neer'
-              required: true
-            - name: 'stretch'
-              label: 'Uitrekken'
-              widget: 'select'
-              options: ['cover','horizontal', 'vertical']
-              default: 'cover'
+            - name: 'cover'
+              label: 'Cover'
+              widget: 'list'
+              fields:
+                - name: 'src'
+                  label: 'Plaatje'
+                  widget: 'image'
+                  required: true
+                - name: 'alt'
+                  label: 'Alternatieve tekst'
+                  widget: 'string'
+                  hint: 'Zet hier de ondertitel/alternatieve tekst'
+                  required: true
+                - name: 'params'
+                  label: 'Parameters'
+                  widget: 'object'
+                  fields:
+                    - name: 'credits'
+                      label: 'Copyrightgegevens'
+                      widget: 'string'
+                      hint: 'Zet hier de copyrightekst neer'
+                      required: true
+                    - name: 'stretch'
+                      label: 'Uitrekken'
+                      widget: 'select'
+                      options: ['cover','horizontal', 'vertical']
+                      default: 'cover'
+            - name: 'files'
+              label: 'Bestanden'
+              widget: list
+              fields:
+                - name: 'name'
+                  label: 'Naam'
+                  widget: 'string'
+                - name: 'src'
+                  widget: 'file'
+                - name: 'description'
+                  label: 'beschrijving'
         - { label: 'Inhoud', name: 'body', widget: 'markdown', hint: 'Shortcodes:{{< abbr title= text= >}},  {{< blockquote author= source= link= title= >}}, {{< imgcap src= title= >}}' }
         - { label: 'Categoriën', name: 'categories', widget: 'list', required: true, hint: 'Hou het bij één categorie!' }
         - { label: 'Tags', name: 'tags', widget: 'list', required: true }

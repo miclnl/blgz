@@ -3,13 +3,18 @@
 baseurl                 = ""
 DefaultContentLanguage  = "nl"
 title                   = "Zelfstandig Gezond"
-theme                   = "hugo-future-imperfect-slim"
+theme                   = "html5up-future-imperfect"
 paginate                = 3
-#disqusShortname         = "zelfstandig-gezond"
+disqusShortname         = ""
 googleAnalytics         = ""
 pluralizeListTitles     = true
 disableLanguages        = ["en"]
 
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  
 [markup.goldmark.renderer]
   unsafe                = true
 
@@ -31,6 +36,7 @@ disableLanguages        = ["en"]
   hideEmptyStats        = true
   robots                = false
   enableRobotsTXT       = true
+  enableComments        = true
 
   [params.meta]
     description         = "Gezond aan het werk!"
@@ -44,13 +50,13 @@ disableLanguages        = ["en"]
   [params.header]
     navbarTitle         = "Zelfstandig Gezond"
     dynamicTitles       = false
-    searchMenu          = true
+    searchMenu          = false
     shareMenu           = true
     languageMenu        = false
 
   [params.intro]
     header                = "Zelfstandig Gezond"
-    paragraph             = "Helpt jou om gezond zelfstandig te zijn"
+    paragraph             = "Helpt de zelfstandige ondernemer gezond te zijn"
     rssIntro              = true
     socialIntro           = true
     hideWhenSingleColumn  = true
@@ -63,7 +69,7 @@ disableLanguages        = ["en"]
       alt                 = "Zelfstandig Gezond Logo"
 
   [params.sidebar]
-    about               = "Hier schrijven we over manieren waarop je gezond aan het werk kan blijven."
+    about               = "Zelfstandig Gezond richt zich op de zelfstandige ondernemers, ZZP'ers en hun gezondheid."
     postAmount          = 3
     categories          = true
     categoriesByCount   = true
@@ -109,25 +115,18 @@ disableLanguages        = ["en"]
     weight            = 2
 
   [[menu.main]]
-    name              = "Blog"
-    identifier        = "blog"
-    url               = "blog"
-    pre               = "<i class='far fa-newspaper'></i>"
-    weight            = 3
-
-  [[menu.main]]
     name              = "Categoriën"
     identifier        = "categories"
     url               = "categories"
     pre               = "<i class='fas fa-sitemap'></i>"
-    weight            = 5
+    weight            = 3
 
   [[menu.main]]
     name              = "Contact"
     identifier        = "contact"
     url               = "contact"
     pre               = "<i class='far fa-envelope'></i>"
-    weight            = 6
+    weight            = 4
 
 [Languages]
 
@@ -152,25 +151,18 @@ disableLanguages        = ["en"]
       weight            = 2
 
     [[Languages.nl.menu.main]]
-      name              = "Blog"
-      identifier        = "blog"
-      url               = "blog"
-      pre               = "<i class='far fa-newspaper'></i>"
-      weight            = 3
-
-    [[Languages.nl.menu.main]]
       name              = "Categorieën"
       identifier        = "categories"
       url               = "categories"
       pre               = "<i class='fas fa-sitemap'></i>"
-      weight            = 5
+      weight            = 3
 
     [[Languages.nl.menu.main]]
       name              = "Contact"
       identifier        = "contact"
       url               = "contact"
       pre               = "<i class='far fa-envelope'></i>"
-      weight            = 6
+      weight            = 4
 
 [social]
   # Professional/Business Oriented Communities
@@ -194,5 +186,6 @@ disableLanguages        = ["en"]
   #email                 = "example"
 
 [imaging]
-  quality = "75"
+  quality = "85"
   hint = "photo"
+  
