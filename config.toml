@@ -79,7 +79,7 @@ disableLanguages        = ["en"]
     socialFooter        = true
 
   [params.staticman]
-    enabled             = true
+    enabled             = true      
     api                 = "blzg-staticman.herokuapp.com"  # No Trailing Slash
     gitProvider         = "github"
     username            = "miclnl"

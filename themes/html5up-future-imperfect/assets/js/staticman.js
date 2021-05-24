@@ -8,12 +8,10 @@
     var username = '{{ .username }}';
     var repo = '{{ .repo }}';
     var branch = '{{ .branch }}';
-
-
+	
   $('.js-form').submit(function () {
     var form = this;
 
-    $(form).addClass('form--loading');
 
     $.ajax({
       type: $(this).attr('method'),
@@ -21,27 +19,23 @@
       data: $(this).serialize(),
       contentType: 'application/x-www-form-urlencoded',
       success: function (data) {
-        showModal('Perfect !', 'Thanks for your comment! It will show on the site once it has been approved. .');
-        $(form).removeClass('form--loading');
+        showModal('Perfect !', 'Dank voor uw commentaar! De reactie verschijnt zodra deze verwerkt is.');
+        $(form).removeClass('spin');
       },
       error: function (err) {
         console.log(err);
-        showModal('Error', 'Sorry, there was an error with the submission!');
-        $(form).removeClass('form--loading');
+        showModal('Error', 'Sorry, er ging wat fout..');
+        $(form).removeClass('spin');
       }
     });
 
     return false;
   });
 
-  $('.js-close-modal').click(function () {
-    $('body').removeClass('show-modal');
-  });
 
   function showModal(title, message) {
-    $('.js-modal-title').text(title);
-    $('.js-modal-text').html(message);
-
-    $('body').addClass('show-modal');
+    $('#modal').html('<h2>' + title + '</h2><p>'+message+'</p>');
+	$("#modal").fadeIn("fast");
+	setTimeout(function(){$("#modal").fadeOut("fast")},1000);
   }
 })(jQuery);
