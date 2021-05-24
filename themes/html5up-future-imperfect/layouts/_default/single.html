@@ -23,7 +23,7 @@
 			
 		</footer>
 		{{ if and .Params.comments .Site.Params.enableComments }}
-			{{ .Render "comments" }}
+			{{ partial "comments/post-comments.html" . }}
 		{{ end }}
 	</article>
 	<ul class="actions pagination">

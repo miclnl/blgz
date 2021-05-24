@@ -45,8 +45,10 @@
   other = "Bekijk ook eens dit bericht van"
 [say_something]
   other = "Vertel het ons"
-[comments]
+[moreComment]
   other = "Reacties"
+[oneComment]
+  other = "Reactie"
 [nothing_yet]
   other = "Geen reacties."
 [reply]

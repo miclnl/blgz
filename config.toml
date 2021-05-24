@@ -78,14 +78,6 @@ disableLanguages        = ["en"]
     rssFooter           = true
     socialFooter        = true
 
-  [params.utterances]
-    enabled             = false
-    repo                = ""
-    issueTerm           = "pathname"
-    issueNumber         = ""
-    label               = "comment" 
-    theme               = "github-light"
-
   [params.staticman]
     enabled             = true
     api                 = "blzg-staticman.herokuapp.com"  # No Trailing Slash
