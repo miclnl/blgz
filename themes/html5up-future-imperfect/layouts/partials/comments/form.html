@@ -1,0 +1,74 @@
+<section class="comment_form">
+  {{ $temp := (replace .RelPermalink "/" "") | replaceRE `^([1-2][0-9])\d\d(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])` "" }}
+  {{ $temp2 := .File.BaseFileName }}
+  {{ if eq .File.BaseFileName "index" }}
+    {{ $.Scratch.Add "post_parent" $temp }}
+  {{ else }}
+    {{ $.Scratch.Add "post_parent" $temp2 }}
+  {{ end }}
+
+  <a id="comment-form"></a>
+  <h3>{{ i18n "say_something" }}</h3>
+
+  <form class="js-form form" method="POST" action="{{ .Site.Params.staticman_api }}">
+    <input type="hidden" name="options[redirect]" value="{{ .Permalink }}#post-submitted">
+    <input type="hidden" name="options[redirectError]" value="{{ .Permalink }}#post-error">
+    <input type="hidden" name="options[entryId]" value="{{ $.Scratch.Get "post_parent" }}">
+    <input type="hidden" name="options[slug]" value="{{ .Permalink }}">
+    <input type="hidden" name="options[origin]" value="{{ .Permalink }}">
+    <input type="hidden" name="options[parent]" value="{{ $.Scratch.Get "post_parent" }}">
+    <input type="hidden" name="fields[reply_to]" value="">
+
+    <fieldset>
+      <input required name="fields[name]" type="text" class="post-comment-field" placeholder="{{ i18n "form_name" }}*">
+    </fieldset>
+
+    <fieldset>
+      <input required name="fields[email]" type="email" class="post-comment-field" placeholder="{{ i18n "form_email" }}*">
+    </fieldset>
+	
+	<fieldset>
+	  <input name="fields[website]" type="text" class="post-comment-field" placeholder="{{ i18n "form_website" }}">
+	</fieldset>
+
+    <fieldset>
+      <textarea required name="fields[body]" class="post-comment-field" placeholder="{{ i18n "form_body" }}" rows="10"></textarea>
+    </fieldset>
+
+    <fieldset>
+          {{ if and .Site.Params.staticman.recaptcha.siteKey .Site.Params.staticman.recaptcha.encryptedKey }}
+          {{ with .Site.Params.staticman.recaptcha }}
+            <input hidden name='options[reCaptcha][siteKey]' value='{{ .sitekey }}'>
+            <input hidden name='options[reCaptcha][secret]' value='{{ .encryptedkey }}'>
+            <div class='g-recaptcha' data-sitekey='{{ .sitekey }}'></div>
+          {{ end }}
+          {{ end }}
+      <input type="submit" class="post-comment-field button" value="Submit" id="submit_button">
+      <input type="reset" class="post-comment-field button" value="Reset">
+    </fieldset>
+
+  </form>
+
+  <script type="text/javascript">
+    document.getElementById("submit_button").disabled = true;
+  </script>
+  
+  <script type="text/javascript">
+    function enableBtn(){
+       document.getElementById("submit_button").disabled = false;
+      }
+  </script>
+
+  <div id="post-submitted" class="dialog">
+    <h3>Thank you</h3>
+    <p>Your post has been submitted and will be published once it has been approved.</p>
+    <p><a href="#" class="btn">OK</a></p>
+  </div>
+
+  <div id="post-error" class="dialog">
+    <h3>OOPS!</h3>
+    <p>Your post has not been submitted.  Please return to the page and try again.  Thank You!</p>
+    <p><a href="#" class="btn">OK</a></p>
+  </div> 
+
+</section>
