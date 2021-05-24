@@ -40,7 +40,7 @@
           {{ with .Site.Params.staticman.recaptcha }}
             <input hidden name='options[reCaptcha][siteKey]' value='{{ .sitekey }}'>
             <input hidden name='options[reCaptcha][secret]' value='{{ .encryptedkey }}'>
-            <div class='g-recaptcha' data-sitekey='{{ .sitekey }}'></div>
+            <div class='g-recaptcha' data-sitekey='{{ .sitekey }}' data-callback="enableBtn"></div>
           {{ end }}
           {{ end }}
       <input type="submit" class="post-comment-field button" value="Submit" id="submit_button">
