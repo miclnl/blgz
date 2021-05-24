@@ -11,7 +11,7 @@
 	
   $('.js-form').submit(function () {
     var form = this;
-
+	showModal("Verstuurd", "Uw reactie is verstuurd.");
 
     $.ajax({
       type: $(this).attr('method'),
@@ -19,12 +19,12 @@
       data: $(this).serialize(),
       contentType: 'application/x-www-form-urlencoded',
       success: function (data) {
-        showModal('Perfect !', 'Dank voor uw commentaar! De reactie verschijnt zodra deze verwerkt is.');
+        showModal('Perfect !', 'Dank voor uw commentaar! De reactie verschijnt zodra deze verwerkt is.',5000);
         $(form).removeClass('spin');
       },
       error: function (err) {
         console.log(err);
-        showModal('Error', 'Sorry, er ging wat fout..');
+        showModal('Error', 'Sorry, er ging wat fout..',5000);
         $(form).removeClass('spin');
       }
     });
@@ -33,9 +33,9 @@
   });
 
 
-  function showModal(title, message) {
+  function showModal(title, message,timeout=1000) {
     $('#modal').html('<h2>' + title + '</h2><p>'+message+'</p>');
 	$("#modal").fadeIn("fast");
-	setTimeout(function(){$("#modal").fadeOut("fast")},1000);
+	setTimeout(function(){$("#modal").fadeOut("fast")},timeout);
   }
 })(jQuery);
