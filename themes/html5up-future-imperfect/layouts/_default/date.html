@@ -1,1 +1,1 @@
-{{ default (i18n "date_format") | .Date.Format }}
+{{ if (.date) }} {{ default (i18n "date_format") | .date.Format }} {{ else }} {{ default (i18n "date_format") | .Date.Format }} {{ end }}
