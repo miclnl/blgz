@@ -3,7 +3,7 @@
   <div class='post'>
     {{ template "_internal/disqus.html" . }}
   </div>
-{{ else if  .Site.Params.staticman.enabled }}
+{{ else if and .Site.Params.staticman.enabled .Site.Data.comments }}
 	{{- $entryId := .File.UniqueID -}}
 	{{- $comments := index $.Site.Data.comments $entryId -}}
 	{{- $month_names := slice "Januari" "Februari" "Maart" "April" "Mei" "Juni" "Juli" "Augustus" "September" "Oktober" "November" "December" -}}
