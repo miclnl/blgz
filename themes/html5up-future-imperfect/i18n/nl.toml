@@ -35,8 +35,8 @@
 
 # Post
 [reading_time]
-  one = "1 minuut leestijd"
-  other = "{{ .Count }} minuten leestijd"
+  one = "<time>1 minuut</time> leestijd"
+  other = "<time>{{ .Count }} minuten</time> leestijd"
 [read_more]
   other = "Lees verder"
 [share_post]

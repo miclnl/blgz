@@ -4,9 +4,9 @@
 
 <a href="{{ .Permalink |absURL }}">
 	<figure class="{{ .Scratch.Get "renderImageClass" }}">
-		<picture layout="responsive">
+		<picture>
 			<source srcset="{{ $webpImage.RelPermalink | absURL }}">
-			<img src="{{ $resizedImage.RelPermalink | absURL }}" alt="{{ $imageResource.Title }} - {{ $imageResource.Params.credits }}" defer>
+			<img src="{{ $resizedImage.RelPermalink | absURL }}" alt="{{ $imageResource.Title }} - {{ $imageResource.Params.credits }}">
 		</picture>
 		{{ if (.Scratch.Get "renderCredits") }}
 		<figcaption class="image credits">
