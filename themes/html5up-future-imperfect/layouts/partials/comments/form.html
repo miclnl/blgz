@@ -1,8 +1,7 @@
 <section class="comment_form">
 {{- $.Scratch.Add "post_parent" .File.UniqueID -}}
-
   <a id="comment-form"></a>
-  <h3>{{ i18n "say_something" }}</h3>
+  <h1>Nieuwe reactie</h1>
 
   <form class="js-form form" method="POST" action="{{ .Site.Params.staticman_api }}">
     <input type="hidden" name="options[entryId]" value="{{ $.Scratch.Get "post_parent" }}">
