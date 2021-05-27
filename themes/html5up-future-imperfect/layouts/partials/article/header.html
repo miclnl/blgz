@@ -8,7 +8,7 @@
 	<div class="meta">
 		<time class="published" datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">{{ .Render "date" }}</time>
 		{{ with .Params.author }}<span class="author name">Door {{ . }}</span>{{ end }}
-		{{ if .Site.Params.ReadingTime }}<p>{{ i18n "reading_time" .ReadingTime }}</p>{{ end }}
+		{{ if .Site.Params.ReadingTime }}<p>{{ i18n "reading_time" .ReadingTime | safeHTML }}</p>{{ end }}
 	</div>
 	</header>
 	{{- $coverImage := .Resources.GetMatch "cover" }}
