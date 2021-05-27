@@ -20,11 +20,11 @@
 				</ul>
 				{{ end }}
 			</div>
-			
-		</footer>
+
 		{{ if and .Params.comments .Site.Params.enableComments }}
 			{{ partial "comments/post-comments.html" . }}
 		{{ end }}
+		</footer>
 	</article>
 	<ul class="actions pagination">
 		{{ if .PrevInSection }}

@@ -1,7 +1,7 @@
 <section class="comment_form">
 {{- $.Scratch.Add "post_parent" .File.UniqueID -}}
   <a id="comment-form"></a>
-  <h1>Nieuwe reactie</h1>
+  <h2>Nieuwe reactie</h2>
 
   <form class="js-form form" method="POST" action="{{ .Site.Params.staticman_api }}">
     <input type="hidden" name="options[entryId]" value="{{ $.Scratch.Get "post_parent" }}">
@@ -11,19 +11,19 @@
     <input type="hidden" name="fields[reply_to]" value="">
 
     <fieldset>
-      <input required name="fields[name]" type="text" class="post-comment-field" placeholder="{{ i18n "form_name" }}*">
+      <input required name="fields[name]" type="text" class="post-comment-field" placeholder="Je naam*">
     </fieldset>
 
     <fieldset>
-      <input required name="fields[email]" type="email" class="post-comment-field" placeholder="{{ i18n "form_email" }}*">
+      <input required name="fields[email]" type="email" class="post-comment-field" placeholder="Je e-mailadres*">
     </fieldset>
 	
 	<fieldset>
-	  <input name="fields[website]" type="text" class="post-comment-field" placeholder="{{ i18n "form_website" }}">
+	  <input name="fields[website]" type="text" class="post-comment-field" placeholder="Je website">
 	</fieldset>
 
     <fieldset>
-      <textarea required name="fields[body]" class="post-comment-field" placeholder="{{ i18n "form_body" }}" rows="10"></textarea>
+      <textarea required name="fields[body]" class="post-comment-field" placeholder="Je bericht*" rows="10"></textarea>
     </fieldset>
 
     <fieldset>
@@ -34,7 +34,7 @@
             <div class='g-recaptcha' data-sitekey='{{ .sitekey }}' data-callback="enableBtn"></div>
           {{ end }}
           {{ end }}
-      <input type="submit" class="post-comment-field button" value="Submit" id="submit_button">
+      <input type="submit" class="post-comment-field button" value="Submit" id="submit_button" disabled>
       <input type="reset" class="post-comment-field button" value="Reset">
     </fieldset>
 
@@ -42,12 +42,9 @@
 <div id="modal" class="modal">
 </div>
 
-  <script type="text/javascript">
-    document.getElementById("submit_button").disabled = true;
-
-    function enableBtn(){
-       document.getElementById("submit_button").disabled = false;
-      }
-  </script>
-
+<script type="text/javascript">
+function enableBtn(){
+   document.getElementById("submit_button").disabled = false;
+  }
+</script>
 </section>
