@@ -20,12 +20,11 @@
 				</ul>
 				{{ end }}
 			</div>
-
-		{{ if and .Params.comments .Site.Params.enableComments }}
-			{{ partial "comments/post-comments.html" . }}
-		{{ end }}
 		</footer>
 	</article>
+			{{ if and .Params.comments .Site.Params.enableComments }}
+			{{ partial "comments/post-comments.html" . }}
+		{{ end }}
 	<ul class="actions pagination">
 		{{ if .PrevInSection }}
 			<li><a href="{{ .PrevInSection.RelPermalink }}" class="button large previous">{{ .PrevInSection.Title }}</a></li>

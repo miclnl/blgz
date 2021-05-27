@@ -276,12 +276,16 @@
 /* --- Staticman CSS --- */
 
 .post-comments {
-  margin-top: 60px;
+	@include padding(_size(section-spacing), _size(section-spacing));
+	background: _palette(bg);
+	border: solid 1px _palette(border);
+	margin: 0 0 _size(section-spacing) 0;
+	position: relative;
 }
 
 .post-comment {
-  background-color: #f7f9fa;
-  border: 1px solid #c8d6dd;
+  background-color: _palette(bg-alt);
+  border: 1px solid _palette(border-alt);
   padding: 10px;
   margin-top: 10px;
   margin-left: 2em;
